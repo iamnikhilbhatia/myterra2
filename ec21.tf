@@ -142,7 +142,7 @@ resource "null_resource" "connecting_ip" {
 	  connection  {
           type = "ssh"
           user = "ec2-user"
-          private_key = file("C:/Users/Akshat/Desktop/${var.insert_key_var}.pem")
+          private_key = file("C:/Users/nikhil/Desktop/${var.insert_key_var}.pem")
           host = aws_instance.inst1.public_ip
       }
       
@@ -353,7 +353,7 @@ resource "null_resource" "filenamechange" {
   connection  {
           type = "ssh"
           user = "ec2-user"
-          private_key = file("C:/Users/Akshat/Desktop/${var.insert_key_var}.pem")
+          private_key = file("C:/Users/nikhil/Desktop/${var.insert_key_var}.pem")
           host = aws_instance.inst1.public_ip
   }
 /*  
